@@ -1,0 +1,7 @@
+History.txt
+Manifest.txt
+README.txt
+Rakefile
+bin/khayyam
+lib/khayyam.rb
+test/test_khayyam.rb
