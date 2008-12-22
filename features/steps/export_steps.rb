@@ -1,6 +1,6 @@
 require File.join(File.dirname(__FILE__), *%w[.. .. spec spec_helper.rb])
 
-Given /^an object contianing data to export$/ do
+Given /^an object containing data to export$/ do
   @topic = Khayyam::Topic.new "vi"
   @topic.regarding "movement" do |items|
     items["h"] = "left"
@@ -24,5 +24,23 @@ end
 Then /^it will contain all the data in the original objects$/ do
   @output.should eql("topic: vi\ncategories: \n  movement: \n    k: down\n    w: beginning of next word\n    l: right\n    $: end of line\n    ^: beginning of line\n    h: left\n    j: up\n")
 end
+
+Given /^an object containing multiple categories to export$/ do
+  @topic = Khayyam::Topic.new "vi"
+  @topic.regarding "movement" do |items|
+    items["h"] = "left"
+    items["j"] = "up"
+  end
+  @topic.regarding "commands" do |items|
+    items[":q"] = "quit"
+    items[":x"] = "save and quit"
+  end
+end
+
+Then /^it will contain all the data and categories in the original objects$/ do
+  @output.should eql(%{topic: vi\ncategories: \n  movement: \n    h: left\n    j: up\n  commands: \n    \":q\": quit\n    \":x\": save and quit\n})
+end
+
+
 
 

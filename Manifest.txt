@@ -3,5 +3,12 @@ Manifest.txt
 README.txt
 Rakefile
 bin/khayyam
+features/export.feature
+features/import.feature
+features/steps/export_steps.rb
+features/steps/import_steps.rb
 lib/khayyam.rb
-test/test_khayyam.rb
+lib/topic.rb
+spec/spec.opts
+spec/spec_helper.rb
+spec/topic_spec.rb
