@@ -8,7 +8,7 @@ A gem for easily moving data and definititions, such as vocabulary words and def
 
 == FEATURES/PROBLEMS:
 
-* 
+* See SYNOPSIS.
 
 == SYNOPSIS:
 

@@ -2,7 +2,6 @@ History.txt
 Manifest.txt
 README.txt
 Rakefile
-bin/khayyam
 features/export.feature
 features/import.feature
 features/steps/export_steps.rb
