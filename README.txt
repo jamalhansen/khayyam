@@ -8,11 +8,34 @@ A gem for easily moving data and definititions, such as vocabulary words and def
 
 == FEATURES/PROBLEMS:
 
-* FIX (list of features or problems)
+* 
 
 == SYNOPSIS:
 
-  FIX (code sample of usage)
+    Export data to a string
+    
+    Example:
+      topic = Khayyam::Topic.new "vi"
+      topic.regarding "movement" do |items|
+        items["h"] = "left"
+        items["j"] = "up"
+      end
+      topic.regarding "commands" do |items|
+        items[":q"] = "quit"
+        items[":x"] = "save and quit"
+      end
+      output_string = topic.export
+      
+      
+    Import data from a string.
+    
+    Example:
+    topic = Khayyam::Topic.import my_data
+    topic.regarding "foo" do |facts|
+      puts facts["bar"]
+    end
+    
+    => "monkey"
 
 == REQUIREMENTS:
 
