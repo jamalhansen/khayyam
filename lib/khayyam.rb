@@ -4,5 +4,5 @@ $:.unshift(File.dirname(__FILE__)) unless
 require 'topic'
 
 module Khayyam
-  VERSION = '0.0.1'
+
 end

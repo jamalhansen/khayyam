@@ -13,7 +13,7 @@ A gem for easily moving data and definititions, such as vocabulary words and def
 == SYNOPSIS:
 
     Export data to a string
-    
+
     Example:
       topic = Khayyam::Topic.new "vi"
       topic.regarding "movement" do |items|
@@ -25,16 +25,16 @@ A gem for easily moving data and definititions, such as vocabulary words and def
         items[":x"] = "save and quit"
       end
       output_string = topic.export
-      
-      
+
+
     Import data from a string.
-    
+
     Example:
     topic = Khayyam::Topic.import my_data
     topic.regarding "foo" do |facts|
       puts facts["bar"]
     end
-    
+
     => "monkey"
 
 == REQUIREMENTS:
@@ -52,7 +52,7 @@ A gem for easily moving data and definititions, such as vocabulary words and def
 Copyright (c) 2008 Jamal Hansen
 
   Khayyam is copyrighted free software by Jamal Hansen
-  <jamal.hansen at gmail dot com> and contributors. You can redistribute it and/or 
+  <jamal.hansen at gmail dot com> and contributors. You can redistribute it and/or
   modify it under either the terms of the GPL2 or the conditions below:
 
   1. You may make and give away verbatim copies of the source form of the
@@ -94,9 +94,9 @@ Copyright (c) 2008 Jamal Hansen
      software (possibly commercial).  But some files in the distribution
      are not written by the author, so that they are not under this terms.
 
-  5. The scripts and library files supplied as input to or produced as 
+  5. The scripts and library files supplied as input to or produced as
      output from the software do not automatically fall under the
-     copyright of the software, but belong to whomever generated them, 
+     copyright of the software, but belong to whomever generated them,
      and may be sold commercially, and may be aggregated with this
      software.
 
