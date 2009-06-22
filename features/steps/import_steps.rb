@@ -1,4 +1,3 @@
-require File.join(File.dirname(__FILE__), *%w[.. .. spec spec_helper.rb])
 
 Given /^a string containing data to import$/ do
   @data = "topic: dairy\ncategories:\n  cheese:\n    cheddar: ubiquitous\n    blue: crumbly"

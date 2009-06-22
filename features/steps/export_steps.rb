@@ -1,4 +1,3 @@
-require File.join(File.dirname(__FILE__), *%w[.. .. spec spec_helper.rb])
 
 Given /^an object containing data to export$/ do
   @topic = Khayyam::Topic.new "vi"
